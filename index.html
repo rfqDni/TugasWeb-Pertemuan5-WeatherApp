@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App - TR 5</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1>🌤️ Weather App</h1>
+    <p class="subtitle">Cek cuaca kota favoritmu</p>
+
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="cityInput" placeholder="Masukkan nama kota..." autocomplete="off">
+      <button type="submit">Cari</button>
+    </form>
+
+    <!-- Loading State -->
+    <div id="loading" class="hidden">
+      <div class="spinner"></div>
+      <p>Memuat data...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="error" class="hidden"></div>
+
+    <!-- Weather Result -->
+    <div id="weatherResult" class="hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" alt="Weather Icon" src="">
+      <p id="temperature" class="temp"></p>
+      <p id="description"></p>
+      <p id="humidity"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
